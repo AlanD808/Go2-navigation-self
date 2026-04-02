@@ -1,0 +1,16 @@
+/home/alan/go2control_ws/install/go2_gazebo_plugins/lib/libLidarStablePlugin.so
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/ament_index/resource_index/package_run_dependencies/go2_gazebo_plugins
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/ament_index/resource_index/parent_prefix_path/go2_gazebo_plugins
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/go2_gazebo_plugins/environment/ament_prefix_path.sh
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/go2_gazebo_plugins/environment/ament_prefix_path.dsv
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/go2_gazebo_plugins/environment/path.sh
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/go2_gazebo_plugins/environment/path.dsv
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/go2_gazebo_plugins/local_setup.bash
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/go2_gazebo_plugins/local_setup.sh
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/go2_gazebo_plugins/local_setup.zsh
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/go2_gazebo_plugins/local_setup.dsv
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/go2_gazebo_plugins/package.dsv
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/ament_index/resource_index/packages/go2_gazebo_plugins
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/go2_gazebo_plugins/cmake/go2_gazebo_pluginsConfig.cmake
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/go2_gazebo_plugins/cmake/go2_gazebo_pluginsConfig-version.cmake
+/home/alan/go2control_ws/install/go2_gazebo_plugins/share/go2_gazebo_plugins/package.xml

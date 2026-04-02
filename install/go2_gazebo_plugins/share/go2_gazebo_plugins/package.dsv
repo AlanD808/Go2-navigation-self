@@ -1,0 +1,6 @@
+source;share/go2_gazebo_plugins/hook/cmake_prefix_path.dsv
+source;share/go2_gazebo_plugins/hook/cmake_prefix_path.sh
+source;share/go2_gazebo_plugins/hook/ld_library_path_lib.dsv
+source;share/go2_gazebo_plugins/hook/ld_library_path_lib.sh
+source;share/go2_gazebo_plugins/local_setup.dsv
+source;share/go2_gazebo_plugins/local_setup.sh

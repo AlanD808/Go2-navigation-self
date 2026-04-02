@@ -1,0 +1,16 @@
+/home/alan/go2control_ws/install/lidar_follower_plugin/lib/lidar_follower_plugin/libLidarFollowerPlugin.so
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/ament_index/resource_index/package_run_dependencies/lidar_follower_plugin
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/ament_index/resource_index/parent_prefix_path/lidar_follower_plugin
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/lidar_follower_plugin/environment/ament_prefix_path.sh
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/lidar_follower_plugin/environment/ament_prefix_path.dsv
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/lidar_follower_plugin/environment/path.sh
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/lidar_follower_plugin/environment/path.dsv
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/lidar_follower_plugin/local_setup.bash
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/lidar_follower_plugin/local_setup.sh
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/lidar_follower_plugin/local_setup.zsh
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/lidar_follower_plugin/local_setup.dsv
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/lidar_follower_plugin/package.dsv
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/ament_index/resource_index/packages/lidar_follower_plugin
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/lidar_follower_plugin/cmake/lidar_follower_pluginConfig.cmake
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/lidar_follower_plugin/cmake/lidar_follower_pluginConfig-version.cmake
+/home/alan/go2control_ws/install/lidar_follower_plugin/share/lidar_follower_plugin/package.xml

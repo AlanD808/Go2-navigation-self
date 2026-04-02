@@ -1,0 +1,6 @@
+numpy
+setuptools
+transforms3d
+
+[test]
+pytest

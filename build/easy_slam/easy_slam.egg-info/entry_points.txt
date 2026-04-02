@@ -1,0 +1,5 @@
+[console_scripts]
+map_saver = easy_slam.map_saver:main
+mapper_node = easy_slam.mapper_node:main
+simple_nav = easy_slam.simple_nav:main
+

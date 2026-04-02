@@ -1,0 +1,4 @@
+source;share/champ_teleop/hook/cmake_prefix_path.dsv
+source;share/champ_teleop/hook/cmake_prefix_path.sh
+source;share/champ_teleop/local_setup.dsv
+source;share/champ_teleop/local_setup.sh

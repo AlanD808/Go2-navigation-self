@@ -1,0 +1,3 @@
+[console_scripts]
+pc2d_converter = pc2_to_2d.pc2d_converter:main
+

@@ -1,0 +1,185 @@
+<sdf version="1.6">
+<world name="realistic_house">
+
+<include><uri>model://ground_plane</uri></include>
+<include><uri>model://sun</uri></include>
+
+<!-- ================= 外壳 ================= -->
+<model name="outer"><static>true</static>
+
+<link name="n"><pose>0 12 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>26 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>26 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="s"><pose>0 -12 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>26 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>26 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="w"><pose>-13 0 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>0.3 24 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>0.3 24 2</size></box></geometry></visual>
+</link>
+
+<link name="e"><pose>13 0 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>0.3 24 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>0.3 24 2</size></box></geometry></visual>
+</link>
+
+</model>
+
+<!-- ================= 客厅（出生区） ================= -->
+<!-- 中央8x8空间完全开放 -->
+
+<!-- 北墙带门洞通走廊 -->
+<model name="living_north"><static>true</static>
+<link name="l"><pose>-2 4 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>4 0.3 2</size></box></geometry></visual>
+</link>
+<link name="r"><pose>2 4 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>4 0.3 2</size></box></geometry></visual>
+</link>
+</model>
+
+<!-- 南墙 -->
+<model name="living_south"><static>true</static>
+<link name="w"><pose>0 -4 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>8 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>8 0.3 2</size></box></geometry></visual>
+</link>
+</model>
+
+<!-- 东墙门洞通卧室1 -->
+<model name="living_east"><static>true</static>
+<link name="t"><pose>4 2 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>4 0.3 2</size></box></geometry></visual>
+</link>
+<link name="b"><pose>4 -2 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>4 0.3 2</size></box></geometry></visual>
+</link>
+</model>
+
+<!-- 西墙门洞通卧室2 -->
+<model name="living_west"><static>true</static>
+<link name="t"><pose>-4 2 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>4 0.3 2</size></box></geometry></visual>
+</link>
+<link name="b"><pose>-4 -2 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>4 0.3 2</size></box></geometry></visual>
+</link>
+</model>
+
+<!-- 家具 -->
+<model name="sofa"><static>true</static>
+<pose>1 -1 0.4 0 0 0</pose>
+<link name="l"><collision name="c"><geometry><box><size>2 0.8 0.8</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>2 0.8 0.8</size></box></geometry></visual></link>
+</model>
+
+<!-- ================= 走廊 ================= -->
+<model name="hall"><static>true</static>
+
+<link name="n"><pose>0 7 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>6 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>6 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="e"><pose>3 5.5 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>3 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>3 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="w"><pose>-3 5.5 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>3 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>3 0.3 2</size></box></geometry></visual>
+</link>
+
+</model>
+
+<!-- ================= 厨房（完整4墙+门洞） ================= -->
+<model name="kitchen"><static>true</static>
+
+<link name="north"><pose>0 10 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>6 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>6 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="east"><pose>3 8.5 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>3 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>3 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="west"><pose>-3 8.5 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>3 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>3 0.3 2</size></box></geometry></visual>
+</link>
+
+</model>
+
+<model name="kitchen_counter"><static>true</static>
+<pose>0 9 0.5 0 0 0</pose>
+<link name="l"><collision name="c"><geometry><box><size>3 0.8 1</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>3 0.8 1</size></box></geometry></visual></link>
+</model>
+
+<!-- ================= 卧室1 ================= -->
+<model name="bedroom1"><static>true</static>
+
+<link name="north"><pose>8 3 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>4 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="south"><pose>8 -3 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>4 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="east"><pose>10 0 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>6 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>6 0.3 2</size></box></geometry></visual>
+</link>
+
+</model>
+
+<model name="bed1"><static>true</static>
+<pose>8 0 0.4 0 0 0</pose>
+<link name="l"><collision name="c"><geometry><box><size>2 1.5 0.8</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>2 1.5 0.8</size></box></geometry></visual></link>
+</model>
+
+<!-- ================= 卧室2 ================= -->
+<model name="bedroom2"><static>true</static>
+
+<link name="north"><pose>-8 3 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>4 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="south"><pose>-8 -3 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>4 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="west"><pose>-10 0 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>6 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>6 0.3 2</size></box></geometry></visual>
+</link>
+
+</model>
+
+<model name="desk2"><static>true</static>
+<pose>-8 0 0.4 0 0 0</pose>
+<link name="l"><collision name="c"><geometry><box><size>1.4 0.7 0.8</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>1.4 0.7 0.8</size></box></geometry></visual></link>
+</model>
+
+</world>
+</sdf>

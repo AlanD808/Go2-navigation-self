@@ -1,0 +1,9 @@
+/home/alan/go2control_ws/build/champ_msgs/rosidl_adapter/champ_msgs:msg/Velocities.idl
+/home/alan/go2control_ws/build/champ_msgs/rosidl_adapter/champ_msgs:msg/PID.idl
+/home/alan/go2control_ws/build/champ_msgs/rosidl_adapter/champ_msgs:msg/Imu.idl
+/home/alan/go2control_ws/build/champ_msgs/rosidl_adapter/champ_msgs:msg/Point.idl
+/home/alan/go2control_ws/build/champ_msgs/rosidl_adapter/champ_msgs:msg/PointArray.idl
+/home/alan/go2control_ws/build/champ_msgs/rosidl_adapter/champ_msgs:msg/Joints.idl
+/home/alan/go2control_ws/build/champ_msgs/rosidl_adapter/champ_msgs:msg/Contacts.idl
+/home/alan/go2control_ws/build/champ_msgs/rosidl_adapter/champ_msgs:msg/ContactsStamped.idl
+/home/alan/go2control_ws/build/champ_msgs/rosidl_adapter/champ_msgs:msg/Pose.idl

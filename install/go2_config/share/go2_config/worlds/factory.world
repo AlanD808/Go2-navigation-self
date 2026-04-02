@@ -1,0 +1,185 @@
+<sdf version="1.6">
+<world name="realistic_factory">
+
+<include><uri>model://ground_plane</uri></include>
+<include><uri>model://sun</uri></include>
+
+<!-- 外围厂房 -->
+<model name="outer"><static>true</static>
+
+<link name="n"><pose>0 18 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>36 0.4 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>36 0.4 2</size></box></geometry></visual>
+</link>
+
+<link name="s"><pose>0 -18 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>36 0.4 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>36 0.4 2</size></box></geometry></visual>
+</link>
+
+<link name="w"><pose>-18 0 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>0.4 36 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>0.4 36 2</size></box></geometry></visual>
+</link>
+
+<link name="e"><pose>18 0 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>0.4 36 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>0.4 36 2</size></box></geometry></visual>
+</link>
+
+</model>
+
+<!-- ================= 十字传送带 ================= -->
+<model name="conveyors"><static>true</static>
+
+<link name="x"><pose>0 0 0.2 0 0 0</pose>
+<collision name="c"><geometry><box><size>30 1.5 0.4</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>30 1.5 0.4</size></box></geometry></visual>
+</link>
+
+<link name="y"><pose>0 0 0.2 0 0 0</pose>
+<collision name="c"><geometry><box><size>1.5 30 0.4</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>1.5 30 0.4</size></box></geometry></visual>
+</link>
+
+</model>
+
+<!-- ================= 四车间 ================= -->
+<!-- NW 机械加工 -->
+<model name="machining"><static>true</static>
+<pose>-10 10 0 0 0 0</pose>
+
+<link name="north"><pose>0 3 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>8 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>8 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="south"><pose>0 -3 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>8 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>8 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="west"><pose>-4 0 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>6 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>6 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="east_left"><pose>4 1.8 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>2.4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>2.4 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="east_right"><pose>4 -1.8 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>2.4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>2.4 0.3 2</size></box></geometry></visual>
+</link>
+
+</model>
+
+<model name="machine_block"><static>true</static>
+<pose>-10 10 0.6 0 0 0</pose>
+<link name="l"><collision name="c"><geometry><box><size>2 2 1.2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>2 2 1.2</size></box></geometry></visual></link>
+</model>
+
+<!-- NE 仓储 -->
+<model name="storage"><static>true</static>
+<pose>10 10 0 0 0 0</pose>
+
+<link name="north"><pose>0 3 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>8 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>8 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="south"><pose>0 -3 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>8 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>8 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="east"><pose>4 0 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>6 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>6 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="west_l"><pose>-4 1.8 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>2.4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>2.4 0.3 2</size></box></geometry></visual>
+</link>
+
+<link name="west_r"><pose>-4 -1.8 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>2.4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>2.4 0.3 2</size></box></geometry></visual>
+</link>
+
+</model>
+
+<model name="rack"><static>true</static>
+<pose>10 10 1 0 0 0</pose>
+<link name="l"><collision name="c"><geometry><box><size>2 4 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>2 4 2</size></box></geometry></visual></link>
+</model>
+
+<!-- SW 装配 -->
+<model name="assembly"><static>true</static>
+<pose>-10 -10 0 0 0 0</pose>
+<link name="north"><pose>0 3 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>8 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>8 0.3 2</size></box></geometry></visual>
+</link>
+<link name="south"><pose>0 -3 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>8 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>8 0.3 2</size></box></geometry></visual>
+</link>
+<link name="west"><pose>-4 0 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>6 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>6 0.3 2</size></box></geometry></visual>
+</link>
+<link name="east_l"><pose>4 1.8 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>2.4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>2.4 0.3 2</size></box></geometry></visual>
+</link>
+<link name="east_r"><pose>4 -1.8 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>2.4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>2.4 0.3 2</size></box></geometry></visual>
+</link>
+</model>
+
+<model name="assembly_line"><static>true</static>
+<pose>-10 -10 0.6 0 0 0</pose>
+<link name="l"><collision name="c"><geometry><box><size>3 1 1.2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>3 1 1.2</size></box></geometry></visual></link>
+</model>
+
+<!-- SE 实验室 -->
+<model name="lab"><static>true</static>
+<pose>10 -10 0 0 0 0</pose>
+<link name="north"><pose>0 3 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>8 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>8 0.3 2</size></box></geometry></visual>
+</link>
+<link name="south"><pose>0 -3 1 0 0 0</pose>
+<collision name="c"><geometry><box><size>8 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>8 0.3 2</size></box></geometry></visual>
+</link>
+<link name="east"><pose>4 0 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>6 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>6 0.3 2</size></box></geometry></visual>
+</link>
+<link name="west_l"><pose>-4 1.8 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>2.4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>2.4 0.3 2</size></box></geometry></visual>
+</link>
+<link name="west_r"><pose>-4 -1.8 1 0 0 1.57</pose>
+<collision name="c"><geometry><box><size>2.4 0.3 2</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>2.4 0.3 2</size></box></geometry></visual>
+</link>
+</model>
+
+<model name="lab_table"><static>true</static>
+<pose>10 -10 0.6 0 0 0</pose>
+<link name="l"><collision name="c"><geometry><box><size>1.8 1 1</size></box></geometry></collision>
+<visual name="v"><geometry><box><size>1.8 1 1</size></box></geometry></visual></link>
+</model>
+
+</world>
+</sdf>

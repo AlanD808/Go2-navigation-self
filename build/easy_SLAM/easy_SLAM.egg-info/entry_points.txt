@@ -1,0 +1,3 @@
+[console_scripts]
+mapper_node = easy_SLAM.mapper_node:main
+
